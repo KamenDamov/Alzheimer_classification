@@ -2,6 +2,6 @@ numpy
 pandas
 gunicorn
 rq
-tensorflow==1.15.5
+tensorflow.js
 keras
 gradio
