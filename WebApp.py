@@ -18,7 +18,7 @@ def classify_image(img):
     #Preprocessing image
     scan = img_to_array(img) 
     scan = scan.reshape(-1,128, 128,3)
-    LeNet5 = load_model('LeNet-5.h5')
+    LeNet5 = load_model('LeNet-5e50Mod.h5')
     return res_dict[np.argmax(LeNet5.predict(scan))]
 
 
