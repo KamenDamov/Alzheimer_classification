@@ -4,7 +4,6 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
-from tensorflow.keras.preprocessing.image import img_to_array 
 
 #Dictionary to replace 
 res_dict = {
@@ -16,7 +15,7 @@ res_dict = {
 
 def classify_image(img):
     #Preprocessing image
-    scan = img_to_array(img) 
+    scan = tf.keras.preprocessing.image.img_to_array(img) 
     scan = scan.reshape(-1,128, 128,3)
     LeNet5 = load_model('LeNet-5e50Mod.h5')
     return res_dict[np.argmax(LeNet5.predict(scan))]
