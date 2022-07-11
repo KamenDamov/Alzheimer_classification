@@ -1,0 +1,7 @@
+numpy
+pandas
+gunicorn
+rq
+tensorflow
+keras
+gradio
