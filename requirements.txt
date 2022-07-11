@@ -2,6 +2,6 @@ numpy
 pandas
 gunicorn
 rq
-tensorflow.js
+tensorflow-cpu
 keras
 gradio
