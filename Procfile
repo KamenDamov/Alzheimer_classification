@@ -1,1 +1,1 @@
-web: python WebApp.py --port=$PORT
+web: source setup.sh && python WebApp.py
