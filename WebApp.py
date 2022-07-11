@@ -22,7 +22,8 @@ def classify_image(img):
     return res_dict[np.argmax(LeNet5.predict(scan))]
 
 
-app = gr.Interface(fn=classify_image, 
+app = gr.Interface(title="Input your horizontal section CT Scan",
+            fn=classify_image, 
              inputs=gr.inputs.Image(shape=(128, 128)),
              outputs=gr.outputs.Label(num_top_classes=4),
              examples=["output/test/Mild_Demented/mild_2.jpg", #Mild dementia CT Scan
