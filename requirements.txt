@@ -5,5 +5,3 @@ rq
 tensorflow-cpu
 keras
 gradio
-keras.models
-keras.preprocessing.image
