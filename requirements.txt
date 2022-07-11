@@ -6,4 +6,4 @@ tensorflow-cpu
 keras
 gradio
 keras.models
-tensorflow.keras.preprocessing.image
+keras.preprocessing.image
