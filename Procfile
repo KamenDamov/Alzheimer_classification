@@ -1,1 +1,1 @@
-web: python WebApp.py --port=$PORT
+worker: python WebApp.py --port=$PORT
