@@ -25,10 +25,10 @@ app = gr.Interface(title="Input your horizontal section MRI scan",
             fn=classify_image, 
              inputs=gr.inputs.Image(shape=(128, 128)),
              outputs=gr.outputs.Label(num_top_classes=4),
-             examples=["output/test/Mild_Demented/mild_2.jpg", #Mild dementia CT Scan
-                        "output/test/Moderate_Demented/moderate_7.jpg", #Moderate dementia CT Scan
-                        "output/test/Non_Demented/non_10.jpg", #No dementia CT Scan
-                        "output/test/Very_Mild_Demented/verymild_3.jpg" #Very mild dementia CT Scan
+             examples=["output/test/Mild_Demented/mild_2.jpg", #Mild dementia MRI
+                        "output/test/Moderate_Demented/moderate_7.jpg", #Moderate dementia MRI
+                        "output/test/Non_Demented/non_10.jpg", #No dementia MRI
+                        "output/test/Very_Mild_Demented/verymild_3.jpg" #Very mild dementia MRI
                     ] 
                 )
 app.launch()
