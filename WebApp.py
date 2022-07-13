@@ -29,7 +29,6 @@ app = gr.Interface(title="Input your horizontal section MRI scan",
                         "output/test/Moderate_Demented/moderate_7.jpg", #Moderate dementia CT Scan
                         "output/test/Non_Demented/non_10.jpg", #No dementia CT Scan
                         "output/test/Very_Mild_Demented/verymild_3.jpg" #Very mild dementia CT Scan
-                        ] 
-                        )
-             
+                    ] 
+                )
 app.launch()
